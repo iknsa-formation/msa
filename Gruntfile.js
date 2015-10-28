@@ -5,9 +5,11 @@ module.exports = function(grunt) {
     
    compass: {
         dist: {
-            files: {
-                'src/style.css' : 'sass/style.scss'
-            }
+          options: {
+            sassDir: 'src/sass',
+            cssDir: 'src/css',
+            environment: 'production'
+          }
         }
     },
 
